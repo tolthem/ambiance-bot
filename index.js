@@ -78,7 +78,7 @@ client.on('message', async message => {
               channelCount: 2,
               sampleFormat: portAudio.SampleFormat16Bit,
               sampleRate: sampleRate,
-              deviceId: audioDeviceId !== null ? audioDeviceId : defaultDevice.id // Use -1 or omit the deviceId to select the default device
+              deviceId: audio !== null ? audio : defaultDevice.id // Use -1 or omit the deviceId to select the default device
             }
           });
           
